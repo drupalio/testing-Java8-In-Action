@@ -1,5 +1,6 @@
 package lambdasinaction.chap11;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.mock;
@@ -11,16 +12,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class UtilTest {
+class UtilTest {
 	@Test
-	public void testUtil_1()
+	void testUtil_1()
 		throws Exception {
 		Util result = new Util();
 		assertNotNull(result);
 	}
 
 	@Test
-	public void testDelay_1()
+	void testDelay_1()
 		throws Exception {
 
 		Util.delay();
@@ -28,7 +29,7 @@ public class UtilTest {
 	}
 
 	@Test
-	public void testDelay_2()
+	void testDelay_2()
 		throws Exception {
 
 		Util.delay();
@@ -36,7 +37,7 @@ public class UtilTest {
 	}
 
 	@Test
-	public void testFormat_1()
+	void testFormat_1()
 		throws Exception {
 		double number = 1.0;
 
@@ -46,7 +47,7 @@ public class UtilTest {
 	}
 
 	@Test
-	public void testFormat_2()
+	void testFormat_2()
 		throws Exception {
 		double number = 1.0;
 
@@ -56,7 +57,7 @@ public class UtilTest {
 	}
 
 	@Test
-	public void testSequence_1()
+	void testSequence_1()
 		throws Exception {
 		List<CompletableFuture<Object>> futures = mock(List.class);
 		// add mock object expectations here
@@ -64,20 +65,22 @@ public class UtilTest {
 
 		CompletableFuture<List<Object>> result = Util.sequence(futures);
 
-		assertNotNull(result);
-		assertEquals(false, result.isCancelled());
-		assertEquals(true, result.isDone());
-		assertEquals(0, result.getNumberOfDependents());
-		assertEquals(true, result.isCompletedExceptionally());
+		assertAll("completions", () -> {
+			assertNotNull(result);
+			assertEquals(false, result.isCancelled());
+			assertEquals(true, result.isDone());
+			assertEquals(0, result.getNumberOfDependents());
+			assertEquals(true, result.isCompletedExceptionally());
+		});
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

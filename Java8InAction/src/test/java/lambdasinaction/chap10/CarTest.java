@@ -8,9 +8,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class CarTest {
+ class CarTest {
 	@Test
-	public void testGetInsurance_1()
+	 void testGetInsurance_1()
 		throws Exception {
 		Car fixture = new Car();
 
@@ -20,12 +20,12 @@ public class CarTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	 void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	 void tearDown()
 		throws Exception {
 	}
 

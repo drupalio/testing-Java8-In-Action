@@ -1,5 +1,6 @@
 package lambdasinaction.dsl;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import lambdasinaction.dsl.model.Order;
@@ -8,9 +9,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class MethodChainingOrderBuilderTest {
+class MethodChainingOrderBuilderTest {
 	@Test
-	public void testBuy_1()
+	void testBuy_1()
 		throws Exception {
 		MethodChainingOrderBuilder fixture = MethodChainingOrderBuilder.forCustomer("");
 		int quantity = 1;
@@ -21,19 +22,21 @@ public class MethodChainingOrderBuilderTest {
 	}
 
 	@Test
-	public void testEnd_1()
+	void testEnd_1()
 		throws Exception {
 		MethodChainingOrderBuilder fixture = MethodChainingOrderBuilder.forCustomer("");
 
 		Order result = fixture.end();
 
-		assertNotNull(result);
-		assertEquals(0.0, result.getValue(), 1.0);
-		assertEquals("", result.getCustomer());
+		assertAll("orders", () -> {
+			assertNotNull(result);
+			assertEquals(0.0, result.getValue(), 1.0);
+			assertEquals("", result.getCustomer());
+		});
 	}
 
 	@Test
-	public void testForCustomer_1()
+	void testForCustomer_1()
 		throws Exception {
 		String customer = "";
 
@@ -43,7 +46,7 @@ public class MethodChainingOrderBuilderTest {
 	}
 
 	@Test
-	public void testSell_1()
+	void testSell_1()
 		throws Exception {
 		MethodChainingOrderBuilder fixture = MethodChainingOrderBuilder.forCustomer("");
 		int quantity = 1;
@@ -54,12 +57,12 @@ public class MethodChainingOrderBuilderTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

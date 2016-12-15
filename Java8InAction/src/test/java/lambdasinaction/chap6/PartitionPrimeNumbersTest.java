@@ -13,9 +13,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class PartitionPrimeNumbersTest {
+class PartitionPrimeNumbersTest {
 	@Test
-	public void testIsPrime_1()
+	void testIsPrime_1()
 		throws Exception {
 		int candidate = 1;
 
@@ -25,7 +25,7 @@ public class PartitionPrimeNumbersTest {
 	}
 
 	@Test
-	public void testIsPrime_2()
+	void testIsPrime_2()
 		throws Exception {
 		int candidate = 1;
 
@@ -35,7 +35,7 @@ public class PartitionPrimeNumbersTest {
 	}
 
 	@Test
-	public void testIsPrime_3()
+	void testIsPrime_3()
 		throws Exception {
 		List<Integer> primes = mock(List.class);
 		Integer candidate = new Integer(1);
@@ -52,7 +52,7 @@ public class PartitionPrimeNumbersTest {
 	}
 
 	@Test
-	public void testIsPrime_4()
+	void testIsPrime_4()
 		throws Exception {
 		List<Integer> primes = mock(List.class);
 		Integer candidate = new Integer(1);
@@ -69,7 +69,7 @@ public class PartitionPrimeNumbersTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		PartitionPrimeNumbers.main();
@@ -77,7 +77,7 @@ public class PartitionPrimeNumbersTest {
 	}
 
 	@Test
-	public void testPartitionPrimes_1()
+	void testPartitionPrimes_1()
 		throws Exception {
 		int n = 1;
 
@@ -90,7 +90,7 @@ public class PartitionPrimeNumbersTest {
 	}
 
 	@Test
-	public void testPartitionPrimesWithCustomCollector_1()
+	void testPartitionPrimesWithCustomCollector_1()
 		throws Exception {
 		int n = 1;
 
@@ -103,7 +103,7 @@ public class PartitionPrimeNumbersTest {
 	}
 
 	@Test
-	public void testPartitionPrimesWithInlineCollector_1()
+	void testPartitionPrimesWithInlineCollector_1()
 		throws Exception {
 		PartitionPrimeNumbers fixture = new PartitionPrimeNumbers();
 		int n = 1;
@@ -117,7 +117,7 @@ public class PartitionPrimeNumbersTest {
 	}
 
 	@Test
-	public void testTakeWhile_1()
+	void testTakeWhile_1()
 		throws Exception {
 		List<Object> list = mock(List.class);
 		Predicate<Object> p = mock(Predicate.class);
@@ -133,7 +133,7 @@ public class PartitionPrimeNumbersTest {
 	}
 
 	@Test
-	public void testTakeWhile_2()
+	void testTakeWhile_2()
 		throws Exception {
 		List<Object> list = mock(List.class);
 		Predicate<Object> p = mock(Predicate.class);
@@ -149,7 +149,7 @@ public class PartitionPrimeNumbersTest {
 	}
 
 	@Test
-	public void testTakeWhile_3()
+	void testTakeWhile_3()
 		throws Exception {
 		List<Object> list = mock(List.class);
 		Predicate<Object> p = mock(Predicate.class);
@@ -165,12 +165,12 @@ public class PartitionPrimeNumbersTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

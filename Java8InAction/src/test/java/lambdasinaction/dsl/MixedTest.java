@@ -4,9 +4,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class MixedTest {
+class MixedTest {
 	@Test
-	public void testMixed_1()
+	void testMixed_1()
 		throws Exception {
 		Mixed fixture = new Mixed();
 
@@ -15,12 +15,12 @@ public class MixedTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

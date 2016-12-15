@@ -94,7 +94,7 @@ public class WordCountTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 

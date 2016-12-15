@@ -7,16 +7,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class OrderTest {
+class OrderTest {
 	@Test
-	public void testOrder_1()
+	void testOrder_1()
 		throws Exception {
 		Order result = new Order();
 		assertNotNull(result);
 	}
 
 	@Test
-	public void testAddTrade_1()
+	void testAddTrade_1()
 		throws Exception {
 		Order fixture = new Order();
 		fixture.setCustomer("");
@@ -28,7 +28,7 @@ public class OrderTest {
 	}
 
 	@Test
-	public void testGetCustomer_1()
+	void testGetCustomer_1()
 		throws Exception {
 		Order fixture = new Order();
 		fixture.setCustomer("");
@@ -40,7 +40,7 @@ public class OrderTest {
 	}
 
 	@Test
-	public void testGetValue_1()
+	void testGetValue_1()
 		throws Exception {
 		Order fixture = new Order();
 		fixture.setCustomer("");
@@ -52,7 +52,7 @@ public class OrderTest {
 	}
 
 	@Test
-	public void testSetCustomer_1()
+	void testSetCustomer_1()
 		throws Exception {
 		Order fixture = new Order();
 		fixture.setCustomer("");
@@ -64,12 +64,12 @@ public class OrderTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 }

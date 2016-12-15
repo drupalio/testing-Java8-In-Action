@@ -1,5 +1,6 @@
 package lambdasinaction.dsl;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.mock;
@@ -12,16 +13,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class LambdaOrderBuilderTest {
+class LambdaOrderBuilderTest {
 	@Test
-	public void testLambdaOrderBuilder_1()
+	void testLambdaOrderBuilder_1()
 		throws Exception {
 		LambdaOrderBuilder result = new LambdaOrderBuilder();
 		assertNotNull(result);
 	}
 
 	@Test
-	public void testBuy_1()
+	void testBuy_1()
 		throws Exception {
 		LambdaOrderBuilder fixture = new LambdaOrderBuilder();
 		Consumer<LambdaOrderBuilder.TradeBuilder> consumer = mock(Consumer.class);
@@ -33,7 +34,7 @@ public class LambdaOrderBuilderTest {
 	}
 
 	@Test
-	public void testForCustomer_1()
+	void testForCustomer_1()
 		throws Exception {
 		LambdaOrderBuilder fixture = new LambdaOrderBuilder();
 		String customer = "";
@@ -43,7 +44,7 @@ public class LambdaOrderBuilderTest {
 	}
 
 	@Test
-	public void testOrder_1()
+	void testOrder_1()
 		throws Exception {
 		Consumer<LambdaOrderBuilder> consumer = mock(Consumer.class);
 		// add mock object expectations here
@@ -51,13 +52,15 @@ public class LambdaOrderBuilderTest {
 
 		Order result = LambdaOrderBuilder.order(consumer);
 
-		assertNotNull(result);
-		assertEquals(0.0, result.getValue(), 1.0);
-		assertEquals(null, result.getCustomer());
+		assertAll("order", () -> {
+			assertNotNull(result);
+			assertEquals(0.0, result.getValue(), 1.0);
+			assertEquals(null, result.getCustomer());
+		});
 	}
 
 	@Test
-	public void testSell_1()
+	void testSell_1()
 		throws Exception {
 		LambdaOrderBuilder fixture = new LambdaOrderBuilder();
 		Consumer<LambdaOrderBuilder.TradeBuilder> consumer = mock(Consumer.class);
@@ -69,12 +72,12 @@ public class LambdaOrderBuilderTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

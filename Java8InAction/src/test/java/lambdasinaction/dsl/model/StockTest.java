@@ -6,9 +6,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class StockTest {
+class StockTest {
 	@Test
-	public void testGetMarket_1()
+	void testGetMarket_1()
 		throws Exception {
 		Stock fixture = new Stock();
 		fixture.setSymbol("");
@@ -20,7 +20,7 @@ public class StockTest {
 	}
 
 	@Test
-	public void testGetSymbol_1()
+	void testGetSymbol_1()
 		throws Exception {
 		Stock fixture = new Stock();
 		fixture.setSymbol("");
@@ -32,7 +32,7 @@ public class StockTest {
 	}
 
 	@Test
-	public void testSetMarket_1()
+	void testSetMarket_1()
 		throws Exception {
 		Stock fixture = new Stock();
 		fixture.setSymbol("");
@@ -44,7 +44,7 @@ public class StockTest {
 	}
 
 	@Test
-	public void testSetSymbol_1()
+	void testSetSymbol_1()
 		throws Exception {
 		Stock fixture = new Stock();
 		fixture.setSymbol("");
@@ -56,12 +56,12 @@ public class StockTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 }

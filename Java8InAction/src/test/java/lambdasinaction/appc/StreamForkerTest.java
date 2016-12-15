@@ -10,9 +10,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class StreamForkerTest {
+ class StreamForkerTest {
 	@Test
-	public void testStreamForker_1()
+	 void testStreamForker_1()
 		throws Exception {
 		Stream<Object> stream = mock(Stream.class);
 		// add mock object expectations here
@@ -24,7 +24,7 @@ public class StreamForkerTest {
 	}
 
 	@Test
-	public void testFork_1()
+	 void testFork_1()
 		throws Exception {
 		StreamForker fixture = new StreamForker(mock(Stream.class));
 		Object key = mock(Object.class);
@@ -38,7 +38,7 @@ public class StreamForkerTest {
 	}
 
 	@Test
-	public void testGetResults_1()
+	 void testGetResults_1()
 		throws Exception {
 		StreamForker fixture = new StreamForker(mock(Stream.class));
 
@@ -51,12 +51,12 @@ public class StreamForkerTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	 void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	 void tearDown()
 		throws Exception {
 	}
 

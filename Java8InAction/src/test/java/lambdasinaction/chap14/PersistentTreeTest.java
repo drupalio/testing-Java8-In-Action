@@ -7,9 +7,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class PersistentTreeTest {
+class PersistentTreeTest {
 	@Test
-	public void testFupdate_1()
+	void testFupdate_1()
 		throws Exception {
 		String k = "";
 		int newval = 1;
@@ -21,7 +21,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testFupdate_2()
+	void testFupdate_2()
 		throws Exception {
 		String k = "";
 		int newval = 1;
@@ -33,7 +33,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testFupdate_3()
+	void testFupdate_3()
 		throws Exception {
 		String k = "";
 		int newval = 1;
@@ -45,7 +45,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testFupdate_4()
+	void testFupdate_4()
 		throws Exception {
 		String k = "";
 		int newval = 1;
@@ -57,7 +57,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testLookup_1()
+	void testLookup_1()
 		throws Exception {
 		String k = "";
 		int defaultval = 1;
@@ -69,7 +69,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testLookup_2()
+	void testLookup_2()
 		throws Exception {
 		String k = "";
 		int defaultval = 1;
@@ -81,7 +81,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testLookup_3()
+	void testLookup_3()
 		throws Exception {
 		String k = "";
 		int defaultval = 1;
@@ -93,7 +93,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testLookup_4()
+	void testLookup_4()
 		throws Exception {
 		String k = "";
 		int defaultval = 1;
@@ -105,7 +105,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 		String[] args = new String[] {};
 
@@ -114,7 +114,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testUpdate_1()
+	void testUpdate_1()
 		throws Exception {
 		String k = "";
 		int newval = 1;
@@ -126,7 +126,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testUpdate_2()
+	void testUpdate_2()
 		throws Exception {
 		String k = "";
 		int newval = 1;
@@ -138,7 +138,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testUpdate_3()
+	void testUpdate_3()
 		throws Exception {
 		String k = "";
 		int newval = 1;
@@ -150,7 +150,7 @@ public class PersistentTreeTest {
 	}
 
 	@Test
-	public void testUpdate_4()
+	void testUpdate_4()
 		throws Exception {
 		String k = "";
 		int newval = 1;
@@ -162,12 +162,12 @@ public class PersistentTreeTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

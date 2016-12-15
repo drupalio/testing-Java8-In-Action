@@ -6,16 +6,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class DateTimeExamplesTest {
+class DateTimeExamplesTest {
 	@Test
-	public void testDateTimeExamples_1()
+	void testDateTimeExamples_1()
 		throws Exception {
 		DateTimeExamples result = new DateTimeExamples();
 		assertNotNull(result);
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 		String[] args = new String[] {};
 
@@ -24,12 +24,12 @@ public class DateTimeExamplesTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

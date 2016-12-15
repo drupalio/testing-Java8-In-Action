@@ -9,9 +9,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class SubsetsMainTest {
+class SubsetsMainTest {
 	@Test
-	public void testConcat_1()
+	void testConcat_1()
 		throws Exception {
 		List<List<Integer>> a = mock(List.class);
 		List<List<Integer>> b = mock(List.class);
@@ -28,7 +28,7 @@ public class SubsetsMainTest {
 	}
 
 	@Test
-	public void testInsertAll_1()
+	void testInsertAll_1()
 		throws Exception {
 		Integer first = new Integer(1);
 		List<List<Integer>> lists = mock(List.class);
@@ -44,7 +44,7 @@ public class SubsetsMainTest {
 	}
 
 	@Test
-	public void testInsertAll_2()
+	void testInsertAll_2()
 		throws Exception {
 		Integer first = new Integer(1);
 		List<List<Integer>> lists = mock(List.class);
@@ -60,7 +60,7 @@ public class SubsetsMainTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 		String[] args = new String[] {};
 
@@ -69,7 +69,7 @@ public class SubsetsMainTest {
 	}
 
 	@Test
-	public void testSubsets_1()
+	void testSubsets_1()
 		throws Exception {
 		List<Integer> l = mock(List.class);
 		// add mock object expectations here
@@ -87,7 +87,7 @@ public class SubsetsMainTest {
 	}
 
 	@Test
-	public void testSubsets_2()
+	void testSubsets_2()
 		throws Exception {
 		List<Integer> l = mock(List.class);
 		// add mock object expectations here
@@ -105,12 +105,12 @@ public class SubsetsMainTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

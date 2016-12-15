@@ -6,9 +6,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class LetterTest {
+class LetterTest {
 	@Test
-	public void testAddFooter_1()
+	void testAddFooter_1()
 		throws Exception {
 		String text = "";
 
@@ -18,7 +18,7 @@ public class LetterTest {
 	}
 
 	@Test
-	public void testAddHeader_1()
+	void testAddHeader_1()
 		throws Exception {
 		String text = "";
 
@@ -28,7 +28,7 @@ public class LetterTest {
 	}
 
 	@Test
-	public void testCheckSpelling_1()
+	void testCheckSpelling_1()
 		throws Exception {
 		String text = "";
 
@@ -38,7 +38,7 @@ public class LetterTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		Letter.main();
@@ -46,12 +46,12 @@ public class LetterTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

@@ -4,9 +4,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class BuildingStreamsTest {
+class BuildingStreamsTest {
 	@Test//(expected = java.nio.file.NoSuchFileException.class)
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		BuildingStreams.main();
@@ -14,7 +14,7 @@ public class BuildingStreamsTest {
 	}
 
 	@Test//(expected = java.nio.file.NoSuchFileException.class)
-	public void testMain_2()
+	void testMain_2()
 		throws Exception {
 
 		BuildingStreams.main();
@@ -22,12 +22,12 @@ public class BuildingStreamsTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

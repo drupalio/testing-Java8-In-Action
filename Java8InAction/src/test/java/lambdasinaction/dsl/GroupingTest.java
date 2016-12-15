@@ -12,9 +12,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class GroupingTest {
+class GroupingTest {
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		Grouping.main();
@@ -22,7 +22,7 @@ public class GroupingTest {
 	}
 
 	@Test
-	public void testTwoLevelGroupingBy_1()
+	void testTwoLevelGroupingBy_1()
 		throws Exception {
 		Function<? extends Object, ? extends Object> f1 = mock(Function.class);
 		Function<? extends Object, ? extends Object> f2 = mock(Function.class);
@@ -35,12 +35,12 @@ public class GroupingTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 }

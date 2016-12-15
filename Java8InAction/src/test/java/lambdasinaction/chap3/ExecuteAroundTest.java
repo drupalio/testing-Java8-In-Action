@@ -10,7 +10,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
-public class ExecuteAroundTest {
+class ExecuteAroundTest {
 	
 	@Test
 	void fileNotFoundException() {
@@ -21,7 +21,7 @@ public class ExecuteAroundTest {
 	}
 	
 	@Test//(expected = java.io.FileNotFoundException.class)
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		ExecuteAround.main();
@@ -31,7 +31,7 @@ public class ExecuteAroundTest {
 	}
 
 	@Test//(expected = java.io.FileNotFoundException.class)
-	public void testMain_2()
+	void testMain_2()
 		throws Exception {
 
 		ExecuteAround.main();
@@ -39,7 +39,7 @@ public class ExecuteAroundTest {
 	}
 
 	@Test//(expected = java.io.FileNotFoundException.class)
-	public void testMain_3()
+	void testMain_3()
 		throws Exception {
 
 		ExecuteAround.main();
@@ -47,7 +47,7 @@ public class ExecuteAroundTest {
 	}
 
 	@Test//(expected = java.io.FileNotFoundException.class)
-	public void testMain_4()
+	void testMain_4()
 		throws Exception {
 
 		ExecuteAround.main();
@@ -55,7 +55,7 @@ public class ExecuteAroundTest {
 	}
 
 	@Test//(expected = java.io.FileNotFoundException.class)
-	public void testProcessFile_1()
+	void testProcessFile_1()
 		throws Exception {
 		ExecuteAround.BufferedReaderProcessor p = mock(ExecuteAround.BufferedReaderProcessor.class);
 		// add mock object expectations here
@@ -67,7 +67,7 @@ public class ExecuteAroundTest {
 	}
 
 	@Test//(expected = java.io.FileNotFoundException.class)
-	public void testProcessFile_2()
+	void testProcessFile_2()
 		throws Exception {
 		ExecuteAround.BufferedReaderProcessor p = mock(ExecuteAround.BufferedReaderProcessor.class);
 		// add mock object expectations here
@@ -79,7 +79,7 @@ public class ExecuteAroundTest {
 	}
 
 	@Test//(expected = java.io.FileNotFoundException.class)
-	public void testProcessFileLimited_1()
+	void testProcessFileLimited_1()
 		throws Exception {
 
 		String result = ExecuteAround.processFileLimited();
@@ -88,7 +88,7 @@ public class ExecuteAroundTest {
 	}
 
 	@Test//(expected = java.io.FileNotFoundException.class)
-	public void testProcessFileLimited_2()
+	void testProcessFileLimited_2()
 		throws Exception {
 
 		String result = ExecuteAround.processFileLimited();
@@ -97,12 +97,12 @@ public class ExecuteAroundTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 }

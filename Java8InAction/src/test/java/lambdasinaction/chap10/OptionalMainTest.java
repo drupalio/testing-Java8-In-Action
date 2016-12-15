@@ -8,9 +8,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class OptionalMainTest {
+class OptionalMainTest {
 	@Test
-	public void testGetCarInsuranceName_1()
+	void testGetCarInsuranceName_1()
 		throws Exception {
 		OptionalMain fixture = new OptionalMain();
 		Optional<Person> person = Optional.empty();
@@ -21,12 +21,12 @@ public class OptionalMainTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

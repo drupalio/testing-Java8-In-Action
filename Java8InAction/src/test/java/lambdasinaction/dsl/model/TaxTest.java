@@ -6,9 +6,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class TaxTest {
+class TaxTest {
 	@Test
-	public void testGeneral_1()
+	void testGeneral_1()
 		throws Exception {
 		double value = 1.0;
 
@@ -18,7 +18,7 @@ public class TaxTest {
 	}
 
 	@Test
-	public void testRegional_1()
+	void testRegional_1()
 		throws Exception {
 		double value = 1.0;
 
@@ -28,7 +28,7 @@ public class TaxTest {
 	}
 
 	@Test
-	public void testSurcharge_1()
+	void testSurcharge_1()
 		throws Exception {
 		double value = 1.0;
 
@@ -38,12 +38,12 @@ public class TaxTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

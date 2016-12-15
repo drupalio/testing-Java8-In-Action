@@ -9,9 +9,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class LambdasTest {
+class LambdasTest {
 	@Test
-	public void testFilter_1()
+	void testFilter_1()
 		throws Exception {
 		List<Lambdas.Apple> inventory = mock(List.class);
 		Lambdas.ApplePredicate p = mock(Lambdas.ApplePredicate.class);
@@ -27,7 +27,7 @@ public class LambdasTest {
 	}
 
 	@Test
-	public void testFilter_2()
+	void testFilter_2()
 		throws Exception {
 		List<Lambdas.Apple> inventory = mock(List.class);
 		Lambdas.ApplePredicate p = mock(Lambdas.ApplePredicate.class);
@@ -43,7 +43,7 @@ public class LambdasTest {
 	}
 
 	@Test
-	public void testFilter_3()
+	void testFilter_3()
 		throws Exception {
 		List<Lambdas.Apple> inventory = mock(List.class);
 		Lambdas.ApplePredicate p = mock(Lambdas.ApplePredicate.class);
@@ -59,7 +59,7 @@ public class LambdasTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		Lambdas.main();
@@ -67,12 +67,12 @@ public class LambdasTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

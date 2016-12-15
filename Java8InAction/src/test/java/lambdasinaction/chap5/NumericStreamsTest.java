@@ -6,9 +6,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class NumericStreamsTest {
+class NumericStreamsTest {
 	@Test
-	public void testIsPerfectSquare_1()
+	void testIsPerfectSquare_1()
 		throws Exception {
 		int n = 1;
 
@@ -18,7 +18,7 @@ public class NumericStreamsTest {
 	}
 
 	@Test
-	public void testIsPerfectSquare_2()
+	void testIsPerfectSquare_2()
 		throws Exception {
 		int n = 1;
 
@@ -28,7 +28,7 @@ public class NumericStreamsTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		NumericStreams.main();
@@ -36,7 +36,7 @@ public class NumericStreamsTest {
 	}
 
 	@Test
-	public void testMain_2()
+	void testMain_2()
 		throws Exception {
 
 		NumericStreams.main();
@@ -44,12 +44,12 @@ public class NumericStreamsTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

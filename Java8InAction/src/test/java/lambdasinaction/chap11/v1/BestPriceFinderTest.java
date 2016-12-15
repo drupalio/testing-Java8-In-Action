@@ -9,16 +9,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class BestPriceFinderTest {
+class BestPriceFinderTest {
 	@Test
-	public void testBestPriceFinder_1()
+	void testBestPriceFinder_1()
 		throws Exception {
 		BestPriceFinder result = new BestPriceFinder();
 		assertNotNull(result);
 	}
 
 	@Test
-	public void testFindPricesFuture_1()
+	void testFindPricesFuture_1()
 		throws Exception {
 		BestPriceFinder fixture = new BestPriceFinder();
 		String product = "";
@@ -44,7 +44,7 @@ public class BestPriceFinderTest {
 	}
 
 	@Test
-	public void testFindPricesInUSD_1()
+	void testFindPricesInUSD_1()
 		throws Exception {
 		BestPriceFinder fixture = new BestPriceFinder();
 		String product = "";
@@ -72,7 +72,7 @@ public class BestPriceFinderTest {
 	}
 
 	@Test
-	public void testFindPricesInUSD_2()
+	void testFindPricesInUSD_2()
 		throws Exception {
 		BestPriceFinder fixture = new BestPriceFinder();
 		String product = "";
@@ -100,7 +100,7 @@ public class BestPriceFinderTest {
 	}
 
 	@Test
-	public void testFindPricesInUSD2_1()
+	void testFindPricesInUSD2_1()
 		throws Exception {
 		BestPriceFinder fixture = new BestPriceFinder();
 		String product = "";
@@ -128,7 +128,7 @@ public class BestPriceFinderTest {
 	}
 
 	@Test
-	public void testFindPricesInUSD2_2()
+	void testFindPricesInUSD2_2()
 		throws Exception {
 		BestPriceFinder fixture = new BestPriceFinder();
 		String product = "";
@@ -156,7 +156,7 @@ public class BestPriceFinderTest {
 	}
 
 	@Test
-	public void testFindPricesInUSD3_1()
+	void testFindPricesInUSD3_1()
 		throws Exception {
 		BestPriceFinder fixture = new BestPriceFinder();
 		String product = "";
@@ -184,7 +184,7 @@ public class BestPriceFinderTest {
 	}
 
 	@Test
-	public void testFindPricesInUSDJava7_1()
+	void testFindPricesInUSDJava7_1()
 		throws Exception {
 		BestPriceFinder fixture = new BestPriceFinder();
 		String product = "";
@@ -196,7 +196,7 @@ public class BestPriceFinderTest {
 	}
 
 	@Test
-	public void testFindPricesInUSDJava7_2()
+	void testFindPricesInUSDJava7_2()
 		throws Exception {
 		BestPriceFinder fixture = new BestPriceFinder();
 		String product = "";
@@ -208,7 +208,7 @@ public class BestPriceFinderTest {
 	}
 
 	@Test
-	public void testFindPricesInUSDJava7_3()
+	void testFindPricesInUSDJava7_3()
 		throws Exception {
 		BestPriceFinder fixture = new BestPriceFinder();
 		String product = "";
@@ -220,7 +220,7 @@ public class BestPriceFinderTest {
 	}
 
 	@Test
-	public void testFindPricesParallel_1()
+	void testFindPricesParallel_1()
 		throws Exception {
 		BestPriceFinder fixture = new BestPriceFinder();
 		String product = "";
@@ -253,7 +253,7 @@ public class BestPriceFinderTest {
 	}
 
 	@Test
-	public void testFindPricesSequential_1()
+	void testFindPricesSequential_1()
 		throws Exception {
 		BestPriceFinder fixture = new BestPriceFinder();
 		String product = "";
@@ -279,12 +279,12 @@ public class BestPriceFinderTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

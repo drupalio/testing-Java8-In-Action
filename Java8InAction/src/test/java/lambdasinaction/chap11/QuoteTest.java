@@ -7,9 +7,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class QuoteTest {
+class QuoteTest {
 	@Test
-	public void testQuote_1()
+	void testQuote_1()
 		throws Exception {
 		String shopName = "";
 		double price = 1.0;
@@ -23,7 +23,7 @@ public class QuoteTest {
 	}
 
 	@Test
-	public void testGetDiscountCode_1()
+	void testGetDiscountCode_1()
 		throws Exception {
 		Quote fixture = new Quote("", 1.0, Discount.Code.DIAMOND);
 
@@ -36,7 +36,7 @@ public class QuoteTest {
 	}
 
 	@Test
-	public void testGetPrice_1()
+	void testGetPrice_1()
 		throws Exception {
 		Quote fixture = new Quote("", 1.0, Discount.Code.DIAMOND);
 
@@ -46,7 +46,7 @@ public class QuoteTest {
 	}
 
 	@Test
-	public void testGetShopName_1()
+	void testGetShopName_1()
 		throws Exception {
 		Quote fixture = new Quote("", 1.0, Discount.Code.DIAMOND);
 
@@ -56,7 +56,7 @@ public class QuoteTest {
 	}
 
 	@Test
-	public void testParse_1()
+	void testParse_1()
 		throws Exception {
 		String s = "";
 
@@ -69,7 +69,7 @@ public class QuoteTest {
 	}
 
 	@Test
-	public void testParse_2()
+	void testParse_2()
 		throws Exception {
 		String s = "";
 
@@ -82,12 +82,12 @@ public class QuoteTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

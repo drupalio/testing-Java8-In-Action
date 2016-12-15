@@ -6,9 +6,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class DiscountTest {
+class DiscountTest {
 	@Test
-	public void testApplyDiscount_1()
+	void testApplyDiscount_1()
 		throws Exception {
 		Quote quote = new Quote("", 1.0, Discount.Code.DIAMOND);
 
@@ -18,12 +18,12 @@ public class DiscountTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

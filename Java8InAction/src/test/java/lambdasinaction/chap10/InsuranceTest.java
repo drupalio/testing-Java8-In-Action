@@ -6,9 +6,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class InsuranceTest {
+class InsuranceTest {
 	@Test
-	public void testGetName_1()
+	void testGetName_1()
 		throws Exception {
 		Insurance fixture = new Insurance();
 
@@ -18,12 +18,12 @@ public class InsuranceTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

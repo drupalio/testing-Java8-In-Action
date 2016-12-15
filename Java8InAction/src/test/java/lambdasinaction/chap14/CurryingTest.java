@@ -9,9 +9,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class CurryingTest {
+class CurryingTest {
 	@Test
-	public void testConverter_1()
+	void testConverter_1()
 		throws Exception {
 		double x = 1.0;
 		double y = 1.0;
@@ -23,7 +23,7 @@ public class CurryingTest {
 	}
 
 	@Test
-	public void testCurriedConverter_1()
+	void testCurriedConverter_1()
 		throws Exception {
 		double y = 1.0;
 		double z = 1.0;
@@ -34,7 +34,7 @@ public class CurryingTest {
 	}
 
 	@Test
-	public void testExpandedCurriedConverter_1()
+	void testExpandedCurriedConverter_1()
 		throws Exception {
 		double w = 1.0;
 		double y = 1.0;
@@ -46,7 +46,7 @@ public class CurryingTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 		String[] args = new String[] {};
 
@@ -55,12 +55,12 @@ public class CurryingTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

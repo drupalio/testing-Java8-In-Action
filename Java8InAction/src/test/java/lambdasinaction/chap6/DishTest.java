@@ -7,9 +7,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class DishTest {
+class DishTest {
 	@Test
-	public void testDish_1()
+	void testDish_1()
 		throws Exception {
 		String name = "";
 		boolean vegetarian = true;
@@ -26,7 +26,7 @@ public class DishTest {
 	}
 
 	@Test
-	public void testGetCalories_1()
+	void testGetCalories_1()
 		throws Exception {
 		Dish fixture = new Dish("", true, 1, Dish.Type.FISH);
 
@@ -36,7 +36,7 @@ public class DishTest {
 	}
 
 	@Test
-	public void testGetName_1()
+	void testGetName_1()
 		throws Exception {
 		Dish fixture = new Dish("", true, 1, Dish.Type.FISH);
 
@@ -46,7 +46,7 @@ public class DishTest {
 	}
 
 	@Test
-	public void testGetType_1()
+	void testGetType_1()
 		throws Exception {
 		Dish fixture = new Dish("", true, 1, Dish.Type.FISH);
 
@@ -59,7 +59,7 @@ public class DishTest {
 	}
 
 	@Test
-	public void testIsVegetarian_1()
+	void testIsVegetarian_1()
 		throws Exception {
 		Dish fixture = new Dish("", true, 1, Dish.Type.FISH);
 
@@ -69,7 +69,7 @@ public class DishTest {
 	}
 
 	@Test
-	public void testIsVegetarian_2()
+	void testIsVegetarian_2()
 		throws Exception {
 		Dish fixture = new Dish("", false, 1, Dish.Type.FISH);
 
@@ -79,7 +79,7 @@ public class DishTest {
 	}
 
 	@Test
-	public void testToString_1()
+	void testToString_1()
 		throws Exception {
 		Dish fixture = new Dish("", true, 1, Dish.Type.FISH);
 
@@ -89,12 +89,12 @@ public class DishTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 }

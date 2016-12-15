@@ -6,9 +6,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class ParallelStreamsTest {
+class ParallelStreamsTest {
 	@Test
-	public void testIterativeSum_1()
+	void testIterativeSum_1()
 		throws Exception {
 		long n = 1L;
 
@@ -18,7 +18,7 @@ public class ParallelStreamsTest {
 	}
 
 	@Test
-	public void testIterativeSum_2()
+	void testIterativeSum_2()
 		throws Exception {
 		long n = -1L;
 
@@ -28,7 +28,7 @@ public class ParallelStreamsTest {
 	}
 
 	@Test
-	public void testParallelRangedSum_1()
+	void testParallelRangedSum_1()
 		throws Exception {
 		long n = 1L;
 
@@ -38,7 +38,7 @@ public class ParallelStreamsTest {
 	}
 
 	@Test
-	public void testParallelSum_1()
+	void testParallelSum_1()
 		throws Exception {
 		long n = 1L;
 
@@ -48,7 +48,7 @@ public class ParallelStreamsTest {
 	}
 
 	@Test
-	public void testRangedSum_1()
+	void testRangedSum_1()
 		throws Exception {
 		long n = 1L;
 
@@ -58,7 +58,7 @@ public class ParallelStreamsTest {
 	}
 
 	@Test
-	public void testSequentialSum_1()
+	void testSequentialSum_1()
 		throws Exception {
 		long n = 1L;
 
@@ -68,7 +68,7 @@ public class ParallelStreamsTest {
 	}
 
 	@Test
-	public void testSideEffectParallelSum_1()
+	void testSideEffectParallelSum_1()
 		throws Exception {
 		long n = 1L;
 
@@ -78,7 +78,7 @@ public class ParallelStreamsTest {
 	}
 
 	@Test
-	public void testSideEffectSum_1()
+	void testSideEffectSum_1()
 		throws Exception {
 		long n = 1L;
 
@@ -88,12 +88,12 @@ public class ParallelStreamsTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

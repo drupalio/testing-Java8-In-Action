@@ -6,14 +6,15 @@ import static org.mockito.Mockito.mock;
 
 import java.util.List;
 import java.util.function.Predicate;
+import org.junit.jupiter.api.function.Executable;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class FilteringApplesTest {
+class FilteringApplesTest {
 	@Test
-	public void testFilterApples_1()
+	void testFilterApples_1()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		Predicate<FilteringApples.Apple> p = mock(Predicate.class);
@@ -28,23 +29,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterApples_2()
-		throws Exception {
-		List<FilteringApples.Apple> inventory = mock(List.class);
-		Predicate<FilteringApples.Apple> p = mock(Predicate.class);
-		// add mock object expectations here
-
-
-		List<FilteringApples.Apple> result = FilteringApples.filterApples(inventory, p);
-
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.NullPointerException
-		//       at lambdasinaction.chap1.FilteringApples.filterApples(FilteringApples.java:66)
-		assertNotNull(result);
-	}
-
-	@Test
-	public void testFilterApples_3()
+	void testFilterApples_2()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		Predicate<FilteringApples.Apple> p = mock(Predicate.class);
@@ -60,7 +45,23 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterGreenApples_1()
+	void testFilterApples_3()
+		throws Exception {
+		List<FilteringApples.Apple> inventory = mock(List.class);
+		Predicate<FilteringApples.Apple> p = mock(Predicate.class);
+		// add mock object expectations here
+
+
+		List<FilteringApples.Apple> result = FilteringApples.filterApples(inventory, p);
+
+		// An unexpected exception was thrown in user code while executing this test:
+		//    java.lang.NullPointerException
+		//       at lambdasinaction.chap1.FilteringApples.filterApples(FilteringApples.java:66)
+		assertNotNull(result);
+	}
+
+	@Test
+	void testFilterGreenApples_1()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		// add mock object expectations here
@@ -75,7 +76,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterGreenApples_2()
+	void testFilterGreenApples_2()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		// add mock object expectations here
@@ -90,7 +91,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterGreenApples_3()
+	void testFilterGreenApples_3()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		// add mock object expectations here
@@ -105,7 +106,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterHeavyApples_1()
+	void testFilterHeavyApples_1()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		// add mock object expectations here
@@ -120,7 +121,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterHeavyApples_2()
+	void testFilterHeavyApples_2()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		// add mock object expectations here
@@ -135,7 +136,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterHeavyApples_3()
+	void testFilterHeavyApples_3()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		// add mock object expectations here
@@ -150,7 +151,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testIsGreenApple_1()
+	void testIsGreenApple_1()
 		throws Exception {
 		FilteringApples.Apple apple = new FilteringApples.Apple(1, "green");
 
@@ -160,7 +161,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testIsGreenApple_2()
+	void testIsGreenApple_2()
 		throws Exception {
 		FilteringApples.Apple apple = new FilteringApples.Apple(1, "");
 
@@ -170,7 +171,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testIsHeavyApple_1()
+	void testIsHeavyApple_1()
 		throws Exception {
 		FilteringApples.Apple apple = new FilteringApples.Apple(151, "");
 
@@ -180,7 +181,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testIsHeavyApple_2()
+	void testIsHeavyApple_2()
 		throws Exception {
 		FilteringApples.Apple apple = new FilteringApples.Apple(1, "");
 
@@ -190,7 +191,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		FilteringApples.main();
@@ -198,12 +199,12 @@ public class FilteringApplesTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

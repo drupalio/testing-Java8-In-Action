@@ -9,9 +9,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class FilteringApplesTest {
+class FilteringApplesTest {
 	@Test
-	public void testFilter_1()
+	void testFilter_1()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		FilteringApples.ApplePredicate p = mock(FilteringApples.ApplePredicate.class);
@@ -26,7 +26,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilter_2()
+	void testFilter_2()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		FilteringApples.ApplePredicate p = mock(FilteringApples.ApplePredicate.class);
@@ -41,7 +41,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilter_3()
+	void testFilter_3()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		FilteringApples.ApplePredicate p = mock(FilteringApples.ApplePredicate.class);
@@ -57,7 +57,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterApplesByColor_1()
+	void testFilterApplesByColor_1()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		String color = "";
@@ -73,7 +73,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterApplesByColor_2()
+	void testFilterApplesByColor_2()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		String color = "";
@@ -89,7 +89,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterApplesByColor_3()
+	void testFilterApplesByColor_3()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		String color = "";
@@ -105,7 +105,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterApplesByWeight_1()
+	void testFilterApplesByWeight_1()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		int weight = 1;
@@ -121,7 +121,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterApplesByWeight_2()
+	void testFilterApplesByWeight_2()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		int weight = 1;
@@ -137,7 +137,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterApplesByWeight_3()
+	void testFilterApplesByWeight_3()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		int weight = 1;
@@ -153,7 +153,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterGreenApples_1()
+	void testFilterGreenApples_1()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		// add mock object expectations here
@@ -168,7 +168,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterGreenApples_2()
+	void testFilterGreenApples_2()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		// add mock object expectations here
@@ -183,7 +183,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testFilterGreenApples_3()
+	void testFilterGreenApples_3()
 		throws Exception {
 		List<FilteringApples.Apple> inventory = mock(List.class);
 		// add mock object expectations here
@@ -198,7 +198,7 @@ public class FilteringApplesTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		FilteringApples.main();
@@ -206,12 +206,12 @@ public class FilteringApplesTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

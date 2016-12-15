@@ -4,18 +4,17 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class MainTest {
+class MainTest {
 	@Test
-	public void testLambda_1()
+	void testLambda_1()
 		throws Exception {
 		Main fixture = new Main();
 
 		fixture.lambda();
 
 	}
-
 	@Test
-	public void testMethodChaining_1()
+	void testMethodChaining_1()
 		throws Exception {
 		Main fixture = new Main();
 
@@ -24,7 +23,7 @@ public class MainTest {
 	}
 
 	@Test
-	public void testNestedFunction_1()
+	void testNestedFunction_1()
 		throws Exception {
 		Main fixture = new Main();
 
@@ -33,7 +32,7 @@ public class MainTest {
 	}
 
 	@Test
-	public void testPlain_1()
+	void testPlain_1()
 		throws Exception {
 		Main fixture = new Main();
 
@@ -42,12 +41,12 @@ public class MainTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

@@ -1,5 +1,6 @@
 package lambdasinaction.dsl;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import lambdasinaction.dsl.model.Order;
@@ -10,9 +11,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class NestedFunctionOrderBuilderTest {
+class NestedFunctionOrderBuilderTest {
 	@Test
-	public void testAt_1()
+	void testAt_1()
 		throws Exception {
 		double price = 1.0;
 
@@ -22,7 +23,7 @@ public class NestedFunctionOrderBuilderTest {
 	}
 
 	@Test
-	public void testBuy_1()
+	void testBuy_1()
 		throws Exception {
 		int quantity = 1;
 		Stock stock = new Stock();
@@ -30,14 +31,16 @@ public class NestedFunctionOrderBuilderTest {
 
 		Trade result = NestedFunctionOrderBuilder.buy(quantity, stock, price);
 
-		assertNotNull(result);
-		assertEquals(0.0, result.getValue(), 1.0);
-		assertEquals(1.0, result.getPrice(), 1.0);
-		assertEquals(0, result.getQuantity());
+		assertAll("trades", () -> {
+			assertNotNull(result);
+			assertEquals(0.0, result.getValue(), 1.0);
+			assertEquals(1.0, result.getPrice(), 1.0);
+			assertEquals(0, result.getQuantity());
+		});
 	}
 
 	@Test
-	public void testOn_1()
+	void testOn_1()
 		throws Exception {
 		String market = "";
 
@@ -47,19 +50,22 @@ public class NestedFunctionOrderBuilderTest {
 	}
 
 	@Test
-	public void testOrder_1()
+	void testOrder_1()
 		throws Exception {
 		String customer = "";
 
 		Order result = NestedFunctionOrderBuilder.order(customer);
-
-		assertNotNull(result);
-		assertEquals(0.0, result.getValue(), 1.0);
-		assertEquals("", result.getCustomer());
+		
+		assertAll("orders", () -> {
+			assertNotNull(result);
+			assertEquals(0.0, result.getValue(), 1.0);
+			assertEquals("", result.getCustomer());
+		});
+			
 	}
 
 	@Test
-	public void testSell_1()
+	void testSell_1()
 		throws Exception {
 		int quantity = 1;
 		Stock stock = new Stock();
@@ -67,32 +73,36 @@ public class NestedFunctionOrderBuilderTest {
 
 		Trade result = NestedFunctionOrderBuilder.sell(quantity, stock, price);
 
-		assertNotNull(result);
-		assertEquals(0.0, result.getValue(), 1.0);
-		assertEquals(1.0, result.getPrice(), 1.0);
-		assertEquals(0, result.getQuantity());
+		assertAll("trades", () -> {
+			assertNotNull(result);
+			assertEquals(0.0, result.getValue(), 1.0);
+			assertEquals(1.0, result.getPrice(), 1.0);
+			assertEquals(0, result.getQuantity());
+		});
 	}
 
 	@Test
-	public void testStock_1()
+	void testStock_1()
 		throws Exception {
 		String symbol = "";
 		String market = "";
 
 		Stock result = NestedFunctionOrderBuilder.stock(symbol, market);
 
-		assertNotNull(result);
-		assertEquals("", result.getSymbol());
-		assertEquals("", result.getMarket());
+		assertAll("stocks", () -> {
+			assertNotNull(result);
+			assertEquals("", result.getSymbol());
+			assertEquals("", result.getMarket());
+		});
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

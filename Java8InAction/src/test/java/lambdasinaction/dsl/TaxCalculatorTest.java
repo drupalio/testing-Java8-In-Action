@@ -12,16 +12,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class TaxCalculatorTest {
+class TaxCalculatorTest {
 	@Test
-	public void testTaxCalculator_1()
+	void testTaxCalculator_1()
 		throws Exception {
 		TaxCalculator result = new TaxCalculator();
 		assertNotNull(result);
 	}
 
 	@Test
-	public void testCalculate_1()
+	void testCalculate_1()
 		throws Exception {
 		TaxCalculator fixture = new TaxCalculator();
 		fixture.taxFuncion = mock(Function.class);
@@ -33,7 +33,7 @@ public class TaxCalculatorTest {
 	}
 
 	@Test
-	public void testCalculate_2()
+	void testCalculate_2()
 		throws Exception {
 		Order order = new Order();
 		boolean useRegional = false;
@@ -46,7 +46,7 @@ public class TaxCalculatorTest {
 	}
 
 	@Test
-	public void testCalculate_3()
+	void testCalculate_3()
 		throws Exception {
 		Order order = new Order();
 		boolean useRegional = true;
@@ -59,7 +59,7 @@ public class TaxCalculatorTest {
 	}
 
 	@Test
-	public void testCalculateF_1()
+	void testCalculateF_1()
 		throws Exception {
 		TaxCalculator fixture = new TaxCalculator();
 		fixture.taxFuncion = mock(Function.class);
@@ -74,7 +74,7 @@ public class TaxCalculatorTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 		String[] args = new String[] {};
 
@@ -83,7 +83,7 @@ public class TaxCalculatorTest {
 	}
 
 	@Test
-	public void testWith_1()
+	void testWith_1()
 		throws Exception {
 		TaxCalculator fixture = new TaxCalculator();
 		fixture.taxFuncion = mock(Function.class);
@@ -97,7 +97,7 @@ public class TaxCalculatorTest {
 	}
 
 	@Test
-	public void testWithTaxGeneral_1()
+	void testWithTaxGeneral_1()
 		throws Exception {
 		TaxCalculator fixture = new TaxCalculator();
 		fixture.taxFuncion = mock(Function.class);
@@ -108,7 +108,7 @@ public class TaxCalculatorTest {
 	}
 
 	@Test
-	public void testWithTaxRegional_1()
+	void testWithTaxRegional_1()
 		throws Exception {
 		TaxCalculator fixture = new TaxCalculator();
 		fixture.taxFuncion = mock(Function.class);
@@ -119,7 +119,7 @@ public class TaxCalculatorTest {
 	}
 
 	@Test
-	public void testWithTaxSurcharge_1()
+	void testWithTaxSurcharge_1()
 		throws Exception {
 		TaxCalculator fixture = new TaxCalculator();
 		fixture.taxFuncion = mock(Function.class);
@@ -130,12 +130,12 @@ public class TaxCalculatorTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

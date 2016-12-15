@@ -7,9 +7,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class TradeTest {
+class TradeTest {
 	@Test
-	public void testGetPrice_1()
+	void testGetPrice_1()
 		throws Exception {
 		Trade fixture = new Trade();
 		fixture.setType(Trade.Type.BUY);
@@ -23,7 +23,7 @@ public class TradeTest {
 	}
 
 	@Test
-	public void testGetQuantity_1()
+	void testGetQuantity_1()
 		throws Exception {
 		Trade fixture = new Trade();
 		fixture.setType(Trade.Type.BUY);
@@ -37,7 +37,7 @@ public class TradeTest {
 	}
 
 	@Test
-	public void testGetStock_1()
+	void testGetStock_1()
 		throws Exception {
 		Trade fixture = new Trade();
 		fixture.setType(Trade.Type.BUY);
@@ -53,7 +53,7 @@ public class TradeTest {
 	}
 
 	@Test
-	public void testGetType_1()
+	void testGetType_1()
 		throws Exception {
 		Trade fixture = new Trade();
 		fixture.setType(Trade.Type.BUY);
@@ -70,7 +70,7 @@ public class TradeTest {
 	}
 
 	@Test
-	public void testGetValue_1()
+	void testGetValue_1()
 		throws Exception {
 		Trade fixture = new Trade();
 		fixture.setType(Trade.Type.BUY);
@@ -84,7 +84,7 @@ public class TradeTest {
 	}
 
 	@Test
-	public void testSetPrice_1()
+	void testSetPrice_1()
 		throws Exception {
 		Trade fixture = new Trade();
 		fixture.setType(Trade.Type.BUY);
@@ -98,7 +98,7 @@ public class TradeTest {
 	}
 
 	@Test
-	public void testSetQuantity_1()
+	void testSetQuantity_1()
 		throws Exception {
 		Trade fixture = new Trade();
 		fixture.setType(Trade.Type.BUY);
@@ -112,7 +112,7 @@ public class TradeTest {
 	}
 
 	@Test
-	public void testSetStock_1()
+	void testSetStock_1()
 		throws Exception {
 		Trade fixture = new Trade();
 		fixture.setType(Trade.Type.BUY);
@@ -126,7 +126,7 @@ public class TradeTest {
 	}
 
 	@Test
-	public void testSetType_1()
+	void testSetType_1()
 		throws Exception {
 		Trade fixture = new Trade();
 		fixture.setType(Trade.Type.BUY);
@@ -140,12 +140,12 @@ public class TradeTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 }

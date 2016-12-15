@@ -6,16 +6,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class MeaningOfThisTest {
+class MeaningOfThisTest {
 	@Test
-	public void testMeaningOfThis_1()
+	void testMeaningOfThis_1()
 		throws Exception {
 		MeaningOfThis result = new MeaningOfThis();
 		assertNotNull(result);
 	}
 
 	@Test
-	public void testDoIt_1()
+	void testDoIt_1()
 		throws Exception {
 		MeaningOfThis fixture = new MeaningOfThis();
 
@@ -24,7 +24,7 @@ public class MeaningOfThisTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		MeaningOfThis.main();
@@ -32,12 +32,12 @@ public class MeaningOfThisTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

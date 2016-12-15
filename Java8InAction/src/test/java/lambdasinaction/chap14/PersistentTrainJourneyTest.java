@@ -9,9 +9,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class PersistentTrainJourneyTest {
+class PersistentTrainJourneyTest {
 	@Test
-	public void testAppend_1()
+	void testAppend_1()
 		throws Exception {
 		PersistentTrainJourney.TrainJourney a = new PersistentTrainJourney.TrainJourney(1, new PersistentTrainJourney.TrainJourney(1, new PersistentTrainJourney.TrainJourney(0, (PersistentTrainJourney.TrainJourney) null)));
 		PersistentTrainJourney.TrainJourney b = new PersistentTrainJourney.TrainJourney(1, new PersistentTrainJourney.TrainJourney(0, (PersistentTrainJourney.TrainJourney) null));
@@ -22,7 +22,7 @@ public class PersistentTrainJourneyTest {
 	}
 
 	@Test
-	public void testAppend_2()
+	void testAppend_2()
 		throws Exception {
 		PersistentTrainJourney.TrainJourney a = null;
 		PersistentTrainJourney.TrainJourney b = new PersistentTrainJourney.TrainJourney(1, new PersistentTrainJourney.TrainJourney(0, (PersistentTrainJourney.TrainJourney) null));
@@ -33,7 +33,7 @@ public class PersistentTrainJourneyTest {
 	}
 
 	@Test
-	public void testLink_1()
+	void testLink_1()
 		throws Exception {
 		PersistentTrainJourney.TrainJourney a = null;
 		PersistentTrainJourney.TrainJourney b = new PersistentTrainJourney.TrainJourney(1, new PersistentTrainJourney.TrainJourney(0, (PersistentTrainJourney.TrainJourney) null));
@@ -44,7 +44,7 @@ public class PersistentTrainJourneyTest {
 	}
 
 	@Test
-	public void testLink_2()
+	void testLink_2()
 		throws Exception {
 		PersistentTrainJourney.TrainJourney a = new PersistentTrainJourney.TrainJourney(1, new PersistentTrainJourney.TrainJourney(1, new PersistentTrainJourney.TrainJourney(0, (PersistentTrainJourney.TrainJourney) null)));
 		PersistentTrainJourney.TrainJourney b = new PersistentTrainJourney.TrainJourney(1, new PersistentTrainJourney.TrainJourney(0, (PersistentTrainJourney.TrainJourney) null));
@@ -55,7 +55,7 @@ public class PersistentTrainJourneyTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 		String[] args = new String[] {};
 
@@ -64,7 +64,7 @@ public class PersistentTrainJourneyTest {
 	}
 
 	@Test
-	public void testVisit_1()
+	void testVisit_1()
 		throws Exception {
 		PersistentTrainJourney.TrainJourney journey = new PersistentTrainJourney.TrainJourney(1, new PersistentTrainJourney.TrainJourney(1, new PersistentTrainJourney.TrainJourney(0, (PersistentTrainJourney.TrainJourney) null)));
 		Consumer<PersistentTrainJourney.TrainJourney> c = mock(Consumer.class);
@@ -76,7 +76,7 @@ public class PersistentTrainJourneyTest {
 	}
 
 	@Test
-	public void testVisit_2()
+	void testVisit_2()
 		throws Exception {
 		PersistentTrainJourney.TrainJourney journey = null;
 		Consumer<PersistentTrainJourney.TrainJourney> c = mock(Consumer.class);
@@ -88,12 +88,12 @@ public class PersistentTrainJourneyTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

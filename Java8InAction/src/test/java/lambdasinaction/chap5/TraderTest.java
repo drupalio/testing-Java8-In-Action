@@ -1,5 +1,6 @@
 package lambdasinaction.chap5;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
@@ -7,23 +8,25 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class TraderTest {
+class TraderTest {
 	@Test
-	public void testTrader_1()
+	void testTrader_1()
 		throws Exception {
 		String n = "";
 		String c = "";
 
 		Trader result = new Trader(n, c);
 
-		assertNotNull(result);
-		assertEquals("Trader: in ", result.toString());
-		assertEquals("", result.getName());
-		assertEquals("", result.getCity());
+		assertAll("trader", () -> {
+			assertNotNull(result);
+			assertEquals("Trader: in ", result.toString());
+			assertEquals("", result.getName());
+			assertEquals("", result.getCity());
+		});
 	}
 
 	@Test
-	public void testGetCity_1()
+	void testGetCity_1()
 		throws Exception {
 		Trader fixture = new Trader("", "");
 
@@ -33,7 +36,7 @@ public class TraderTest {
 	}
 
 	@Test
-	public void testGetName_1()
+	void testGetName_1()
 		throws Exception {
 		Trader fixture = new Trader("", "");
 
@@ -43,7 +46,7 @@ public class TraderTest {
 	}
 
 	@Test
-	public void testSetCity_1()
+	void testSetCity_1()
 		throws Exception {
 		Trader fixture = new Trader("", "");
 		String newCity = "";
@@ -53,7 +56,7 @@ public class TraderTest {
 	}
 
 	@Test
-	public void testToString_1()
+	void testToString_1()
 		throws Exception {
 		Trader fixture = new Trader("", "");
 
@@ -63,12 +66,12 @@ public class TraderTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 }

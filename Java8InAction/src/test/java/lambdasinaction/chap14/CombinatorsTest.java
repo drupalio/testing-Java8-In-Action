@@ -9,9 +9,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class CombinatorsTest {
+class CombinatorsTest {
 	@Test
-	public void testCompose_1()
+	void testCompose_1()
 		throws Exception {
 		Function<Object, Object> g = mock(Function.class);
 		Function<Object, Object> f = mock(Function.class);
@@ -24,7 +24,7 @@ public class CombinatorsTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 		String[] args = new String[] {};
 
@@ -33,7 +33,7 @@ public class CombinatorsTest {
 	}
 
 	@Test
-	public void testRepeat_1()
+	void testRepeat_1()
 		throws Exception {
 		int n = 1;
 		Function<Object, Object> f = mock(Function.class);
@@ -46,7 +46,7 @@ public class CombinatorsTest {
 	}
 
 	@Test
-	public void testRepeat_2()
+	void testRepeat_2()
 		throws Exception {
 		int n = 0;
 		Function<Object, Object> f = mock(Function.class);
@@ -59,12 +59,12 @@ public class CombinatorsTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

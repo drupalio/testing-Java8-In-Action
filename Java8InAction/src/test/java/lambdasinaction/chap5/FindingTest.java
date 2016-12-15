@@ -5,9 +5,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import lambdasinaction.chap5.Finding;
 
-public class FindingTest {
+class FindingTest {
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		Finding.main();
@@ -15,7 +15,7 @@ public class FindingTest {
 	}
 
 	@Test
-	public void testMain_2()
+	void testMain_2()
 		throws Exception {
 
 		Finding.main();
@@ -23,12 +23,12 @@ public class FindingTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

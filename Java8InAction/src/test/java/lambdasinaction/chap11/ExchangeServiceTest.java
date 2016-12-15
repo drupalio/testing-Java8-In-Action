@@ -6,9 +6,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class ExchangeServiceTest {
+class ExchangeServiceTest {
 	@Test
-	public void testGetRate_1()
+	void testGetRate_1()
 		throws Exception {
 		ExchangeService.Money source = ExchangeService.Money.CAD;
 		ExchangeService.Money destination = ExchangeService.Money.CAD;
@@ -19,12 +19,12 @@ public class ExchangeServiceTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

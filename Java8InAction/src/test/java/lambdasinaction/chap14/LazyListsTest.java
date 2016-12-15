@@ -8,9 +8,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class LazyListsTest {
+class LazyListsTest {
 	@Test
-	public void testFrom_1()
+	void testFrom_1()
 		throws Exception {
 		int n = 1;
 
@@ -22,7 +22,7 @@ public class LazyListsTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 		String[] args = new String[] {};
 
@@ -31,7 +31,7 @@ public class LazyListsTest {
 	}
 
 	@Test
-	public void testPrimes_1()
+	void testPrimes_1()
 		throws Exception {
 		LazyLists.MyList<Integer> numbers = mock(LazyLists.MyList.class);
 		// add mock object expectations here
@@ -45,7 +45,7 @@ public class LazyListsTest {
 	}
 
 	@Test
-	public void testPrintAll_1()
+	void testPrintAll_1()
 		throws Exception {
 		LazyLists.MyList<Object> numbers = mock(LazyLists.MyList.class);
 		// add mock object expectations here
@@ -61,7 +61,7 @@ public class LazyListsTest {
 	}
 
 	@Test
-	public void testPrintAll_2()
+	void testPrintAll_2()
 		throws Exception {
 		LazyLists.MyList<Object> numbers = mock(LazyLists.MyList.class);
 		// add mock object expectations here
@@ -78,12 +78,12 @@ public class LazyListsTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

@@ -7,9 +7,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class ShopTest {
+class ShopTest {
 	@Test
-	public void testShop_1()
+	void testShop_1()
 		throws Exception {
 		String name = "aaaa";
 
@@ -20,7 +20,7 @@ public class ShopTest {
 	}
 
 	@Test
-	public void testCalculatePrice_1()
+	void testCalculatePrice_1()
 		throws Exception {
 		Shop fixture = new Shop("");
 		String product = "aaa";
@@ -35,7 +35,7 @@ public class ShopTest {
 	}
 
 	@Test
-	public void testGetName_1()
+	void testGetName_1()
 		throws Exception {
 		Shop fixture = new Shop("");
 
@@ -49,7 +49,7 @@ public class ShopTest {
 	}
 
 	@Test
-	public void testGetPrice_1()
+	void testGetPrice_1()
 		throws Exception {
 		Shop fixture = new Shop("");
 		String product = "";
@@ -64,12 +64,12 @@ public class ShopTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

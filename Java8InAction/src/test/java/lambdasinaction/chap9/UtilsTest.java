@@ -8,9 +8,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class UtilsTest {
+class UtilsTest {
 	@Test
-	public void testPaint_1()
+	void testPaint_1()
 		throws Exception {
 		List<Resizable> l = mock(List.class);
 		// add mock object expectations here
@@ -21,12 +21,12 @@ public class UtilsTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

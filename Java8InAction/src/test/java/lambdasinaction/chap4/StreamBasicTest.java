@@ -9,9 +9,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class StreamBasicTest {
+class StreamBasicTest {
 	@Test
-	public void testGetLowCaloricDishesNamesInJava7_1()
+	void testGetLowCaloricDishesNamesInJava7_1()
 		throws Exception {
 		List<Dish> dishes = mock(List.class);
 		// add mock object expectations here
@@ -26,7 +26,7 @@ public class StreamBasicTest {
 	}
 
 	@Test
-	public void testGetLowCaloricDishesNamesInJava7_2()
+	void testGetLowCaloricDishesNamesInJava7_2()
 		throws Exception {
 		List<Dish> dishes = mock(List.class);
 		// add mock object expectations here
@@ -41,7 +41,7 @@ public class StreamBasicTest {
 	}
 
 	@Test
-	public void testGetLowCaloricDishesNamesInJava7_3()
+	void testGetLowCaloricDishesNamesInJava7_3()
 		throws Exception {
 		List<Dish> dishes = mock(List.class);
 		// add mock object expectations here
@@ -56,7 +56,7 @@ public class StreamBasicTest {
 	}
 
 	@Test
-	public void testGetLowCaloricDishesNamesInJava8_1()
+	void testGetLowCaloricDishesNamesInJava8_1()
 		throws Exception {
 		List<Dish> dishes = mock(List.class);
 		// add mock object expectations here
@@ -71,7 +71,7 @@ public class StreamBasicTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 
 		StreamBasic.main();
@@ -79,12 +79,12 @@ public class StreamBasicTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 

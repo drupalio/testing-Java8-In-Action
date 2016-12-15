@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 class OnlineBankingLambdaTest {
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 		String[] args = new String[] {};
 

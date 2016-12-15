@@ -1,5 +1,6 @@
 package lambdasinaction.chap5;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
@@ -7,9 +8,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class TransactionTest {
+class TransactionTest {
 	@Test
-	public void testTransaction_1()
+	void testTransaction_1()
 		throws Exception {
 		Trader trader = new Trader("", "");
 		int year = 1;
@@ -17,14 +18,16 @@ public class TransactionTest {
 
 		Transaction result = new Transaction(trader, year, value);
 
-		assertNotNull(result);
-		assertEquals("{Trader: in , year: 1, value:1}", result.toString());
-		assertEquals(1, result.getValue());
-		assertEquals(1, result.getYear());
+		assertAll("trader", () -> {
+			assertNotNull(result);
+			assertEquals("{Trader: in , year: 1, value:1}", result.toString());
+			assertEquals(1, result.getValue());
+			assertEquals(1, result.getYear());
+		});
 	}
 
 	@Test
-	public void testGetTrader_1()
+	void testGetTrader_1()
 		throws Exception {
 		Transaction fixture = new Transaction(new Trader("", ""), 1, 1);
 
@@ -37,7 +40,7 @@ public class TransactionTest {
 	}
 
 	@Test
-	public void testGetValue_1()
+	void testGetValue_1()
 		throws Exception {
 		Transaction fixture = new Transaction(new Trader("", ""), 1, 1);
 
@@ -47,7 +50,7 @@ public class TransactionTest {
 	}
 
 	@Test
-	public void testGetYear_1()
+	void testGetYear_1()
 		throws Exception {
 		Transaction fixture = new Transaction(new Trader("", ""), 1, 1);
 
@@ -57,7 +60,7 @@ public class TransactionTest {
 	}
 
 	@Test
-	public void testToString_1()
+	void testToString_1()
 		throws Exception {
 		Transaction fixture = new Transaction(new Trader("", ""), 1, 1);
 
@@ -67,12 +70,12 @@ public class TransactionTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 }

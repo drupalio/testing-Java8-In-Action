@@ -10,9 +10,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class PatternMatchingTest {
+class PatternMatchingTest {
 	@Test
-	public void testMyIf_1()
+	void testMyIf_1()
 		throws Exception {
 		boolean b = false;
 		Supplier<Object> truecase = mock(Supplier.class);
@@ -26,7 +26,7 @@ public class PatternMatchingTest {
 	}
 
 	@Test
-	public void testMyIf_2()
+	void testMyIf_2()
 		throws Exception {
 		boolean b = true;
 		Supplier<Object> truecase = mock(Supplier.class);
@@ -40,7 +40,7 @@ public class PatternMatchingTest {
 	}
 
 	@Test
-	public void testMain_1()
+	void testMain_1()
 		throws Exception {
 		String[] args = new String[] {};
 
@@ -49,7 +49,7 @@ public class PatternMatchingTest {
 	}
 
 	@Test
-	public void testPatternMatchExpr_1()
+	void testPatternMatchExpr_1()
 		throws Exception {
 		PatternMatching.Expr e = new PatternMatching.BinOp("", new PatternMatching.Expr(), new PatternMatching.Expr());
 		PatternMatching.TriFunction<String, PatternMatching.Expr, PatternMatching.Expr, Object> binopcase = mock(PatternMatching.TriFunction.class);
@@ -63,7 +63,7 @@ public class PatternMatchingTest {
 	}
 
 	@Test
-	public void testPatternMatchExpr_2()
+	void testPatternMatchExpr_2()
 		throws Exception {
 		PatternMatching.Expr e = new PatternMatching.Number(1);
 		PatternMatching.TriFunction<String, PatternMatching.Expr, PatternMatching.Expr, Object> binopcase = mock(PatternMatching.TriFunction.class);
@@ -78,7 +78,7 @@ public class PatternMatchingTest {
 	}
 
 	@Test
-	public void testPatternMatchExpr_3()
+	void testPatternMatchExpr_3()
 		throws Exception {
 		PatternMatching.Expr e = new PatternMatching.Expr();
 		PatternMatching.TriFunction<String, PatternMatching.Expr, PatternMatching.Expr, Object> binopcase = mock(PatternMatching.TriFunction.class);
@@ -93,12 +93,12 @@ public class PatternMatchingTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 }

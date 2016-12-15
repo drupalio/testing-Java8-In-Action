@@ -8,9 +8,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class AsyncShopTest {
+class AsyncShopTest {
 	@Test
-	public void testAsyncShop_1()
+	void testAsyncShop_1()
 		throws Exception {
 		String name = "aaaa";
 
@@ -20,7 +20,7 @@ public class AsyncShopTest {
 	}
 
 	@Test
-	public void testGetPrice_1()
+	void testGetPrice_1()
 		throws Exception {
 		AsyncShop fixture = new AsyncShop("");
 		String product = "";
@@ -35,12 +35,12 @@ public class AsyncShopTest {
 	}
 
 	@BeforeEach
-	public void setUp()
+	void setUp()
 		throws Exception {
 	}
 
 	@AfterEach
-	public void tearDown()
+	void tearDown()
 		throws Exception {
 	}
 
