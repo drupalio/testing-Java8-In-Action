@@ -5,8 +5,14 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@Tag("chap7")
+@RunWith(JUnitPlatform.class)
 public class WordCountTest {
 	@Test
 	public void testWordCount_1()
@@ -14,7 +20,7 @@ public class WordCountTest {
 		WordCount result = new WordCount();
 		assertNotNull(result);
 	}
-
+	@Disabled
 	@Test
 	public void testCountWords_1()
 		throws Exception {

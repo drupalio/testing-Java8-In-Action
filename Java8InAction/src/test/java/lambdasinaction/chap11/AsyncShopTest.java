@@ -6,8 +6,14 @@ import java.util.concurrent.Future;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@Tag("chap11")
+@RunWith(JUnitPlatform.class)
 class AsyncShopTest {
 	@Test
 	void testAsyncShop_1()
@@ -19,6 +25,7 @@ class AsyncShopTest {
 		assertNotNull(result);
 	}
 
+	@Disabled
 	@Test
 	void testGetPrice_1()
 		throws Exception {

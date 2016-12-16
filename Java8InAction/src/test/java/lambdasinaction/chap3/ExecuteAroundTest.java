@@ -7,9 +7,14 @@ import static org.mockito.Mockito.mock;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
-
+@Tag("chap3")
+@RunWith(JUnitPlatform.class)
 class ExecuteAroundTest {
 	
 	@Test
@@ -20,6 +25,7 @@ class ExecuteAroundTest {
         assertEquals("file not found", exception.getMessage());
 	}
 	
+	@Disabled
 	@Test//(expected = java.io.FileNotFoundException.class)
 	void testMain_1()
 		throws Exception {
@@ -30,6 +36,7 @@ class ExecuteAroundTest {
 		      });
 	}
 
+	@Disabled
 	@Test//(expected = java.io.FileNotFoundException.class)
 	void testMain_2()
 		throws Exception {
@@ -38,6 +45,7 @@ class ExecuteAroundTest {
 
 	}
 
+	@Disabled
 	@Test//(expected = java.io.FileNotFoundException.class)
 	void testMain_3()
 		throws Exception {
@@ -46,6 +54,7 @@ class ExecuteAroundTest {
 
 	}
 
+	@Disabled
 	@Test//(expected = java.io.FileNotFoundException.class)
 	void testMain_4()
 		throws Exception {
@@ -54,6 +63,7 @@ class ExecuteAroundTest {
 
 	}
 
+	@Disabled
 	@Test//(expected = java.io.FileNotFoundException.class)
 	void testProcessFile_1()
 		throws Exception {
@@ -66,6 +76,7 @@ class ExecuteAroundTest {
 		assertNotNull(result);
 	}
 
+	@Disabled
 	@Test//(expected = java.io.FileNotFoundException.class)
 	void testProcessFile_2()
 		throws Exception {
@@ -78,6 +89,7 @@ class ExecuteAroundTest {
 		assertNotNull(result);
 	}
 
+	@Disabled
 	@Test//(expected = java.io.FileNotFoundException.class)
 	void testProcessFileLimited_1()
 		throws Exception {
@@ -86,7 +98,7 @@ class ExecuteAroundTest {
 
 		assertNotNull(result);
 	}
-
+	@Disabled
 	@Test//(expected = java.io.FileNotFoundException.class)
 	void testProcessFileLimited_2()
 		throws Exception {

@@ -6,8 +6,13 @@ import java.util.function.Consumer;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@Tag("chap8")
+@RunWith(JUnitPlatform.class)
 class OnlineBankingLambdaTest {
 	@Test
 	void testMain_1()

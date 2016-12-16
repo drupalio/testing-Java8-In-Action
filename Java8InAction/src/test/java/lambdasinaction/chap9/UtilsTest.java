@@ -6,8 +6,13 @@ import java.util.List;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@Tag("chap9")
+@RunWith(JUnitPlatform.class)
 class UtilsTest {
 	@Test
 	void testPaint_1()

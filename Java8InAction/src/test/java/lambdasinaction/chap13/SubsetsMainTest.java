@@ -7,9 +7,16 @@ import java.util.List;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@Tag("chap13")
+@RunWith(JUnitPlatform.class)
 class SubsetsMainTest {
+	@Disabled
 	@Test
 	void testConcat_1()
 		throws Exception {
@@ -27,6 +34,7 @@ class SubsetsMainTest {
 		assertNotNull(result);
 	}
 
+	@Disabled
 	@Test
 	void testInsertAll_1()
 		throws Exception {
@@ -43,6 +51,7 @@ class SubsetsMainTest {
 		assertNotNull(result);
 	}
 
+	@Disabled
 	@Test
 	void testInsertAll_2()
 		throws Exception {

@@ -11,8 +11,14 @@ import java.util.function.Predicate;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@Tag("chap6")
+@RunWith(JUnitPlatform.class)
 class PartitionPrimeNumbersTest {
 	@Test
 	void testIsPrime_1()
@@ -34,6 +40,7 @@ class PartitionPrimeNumbersTest {
 		assertEquals(true, result);
 	}
 
+	@Disabled
 	@Test
 	void testIsPrime_3()
 		throws Exception {
@@ -51,6 +58,7 @@ class PartitionPrimeNumbersTest {
 		assertTrue(result);
 	}
 
+	@Disabled
 	@Test
 	void testIsPrime_4()
 		throws Exception {
@@ -116,6 +124,7 @@ class PartitionPrimeNumbersTest {
 		assertTrue(result.containsKey(Boolean.TRUE));
 	}
 
+	@Disabled
 	@Test
 	void testTakeWhile_1()
 		throws Exception {
@@ -132,6 +141,7 @@ class PartitionPrimeNumbersTest {
 		assertNotNull(result);
 	}
 
+	@Disabled
 	@Test
 	void testTakeWhile_2()
 		throws Exception {
@@ -148,6 +158,7 @@ class PartitionPrimeNumbersTest {
 		assertNotNull(result);
 	}
 
+	@Disabled
 	@Test
 	void testTakeWhile_3()
 		throws Exception {

@@ -7,9 +7,16 @@ import java.util.List;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@Tag("chap3")
+@RunWith(JUnitPlatform.class)
 class LambdasTest {
+	@Disabled
 	@Test
 	void testFilter_1()
 		throws Exception {
@@ -26,6 +33,7 @@ class LambdasTest {
 		assertNotNull(result);
 	}
 
+	@Disabled
 	@Test
 	void testFilter_2()
 		throws Exception {
@@ -42,6 +50,7 @@ class LambdasTest {
 		assertNotNull(result);
 	}
 
+	@Disabled
 	@Test
 	void testFilter_3()
 		throws Exception {

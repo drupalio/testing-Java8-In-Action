@@ -6,8 +6,14 @@ import static org.mockito.Mockito.mock;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@Tag("chap14")
+@RunWith(JUnitPlatform.class)
 class LazyListsTest {
 	@Test
 	void testFrom_1()
@@ -44,6 +50,7 @@ class LazyListsTest {
 		assertEquals(null, result.head());
 	}
 
+	@Disabled
 	@Test
 	void testPrintAll_1()
 		throws Exception {
@@ -60,6 +67,7 @@ class LazyListsTest {
 		//       at lambdasinaction.chap14.LazyLists.printAll(LazyLists.java:125)
 	}
 
+	@Disabled
 	@Test
 	void testPrintAll_2()
 		throws Exception {

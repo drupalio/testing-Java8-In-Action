@@ -9,8 +9,14 @@ import java.util.stream.Stream;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@Tag("chap11")
+@RunWith(JUnitPlatform.class)
 class BestPriceFinderTest {
 	@Test
 	void testBestPriceFinder_1()
@@ -18,7 +24,7 @@ class BestPriceFinderTest {
 		BestPriceFinder result = new BestPriceFinder();
 		assertNotNull(result);
 	}
-
+	@Disabled
 	@Test
 	void testFindPricesFuture_1()
 		throws Exception {
@@ -44,7 +50,7 @@ class BestPriceFinderTest {
 		//       ... 4 more
 		assertNotNull(result);
 	}
-
+	@Disabled
 	@Test
 	void testFindPricesParallel_1()
 		throws Exception {
@@ -77,7 +83,7 @@ class BestPriceFinderTest {
 		//       at lambdasinaction.chap11.BestPriceFinder.findPricesParallel(BestPriceFinder.java:42)
 		assertNotNull(result);
 	}
-
+	@Disabled
 	@Test
 	void testFindPricesSequential_1()
 		throws Exception {
@@ -103,7 +109,7 @@ class BestPriceFinderTest {
 		//       at lambdasinaction.chap11.BestPriceFinder.findPricesSequential(BestPriceFinder.java:34)
 		assertNotNull(result);
 	}
-
+	@Disabled
 	@Test
 	void testFindPricesStream_1()
 		throws Exception {
@@ -116,7 +122,7 @@ class BestPriceFinderTest {
 		assertEquals(5L, result.count());
 		assertEquals(false, result.isParallel());
 	}
-
+	@Disabled
 	@Test
 	void testPrintPricesStream_1()
 		throws Exception {

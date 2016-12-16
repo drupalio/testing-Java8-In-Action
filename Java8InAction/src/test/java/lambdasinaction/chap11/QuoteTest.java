@@ -5,8 +5,14 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@Tag("chap11")
+@RunWith(JUnitPlatform.class)
 class QuoteTest {
 	@Test
 	void testQuote_1()
@@ -55,6 +61,7 @@ class QuoteTest {
 		assertEquals("", result);
 	}
 
+	@Disabled
 	@Test
 	void testParse_1()
 		throws Exception {
@@ -68,6 +75,7 @@ class QuoteTest {
 		assertNotNull(result);
 	}
 
+	@Disabled
 	@Test
 	void testParse_2()
 		throws Exception {

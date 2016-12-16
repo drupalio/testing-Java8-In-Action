@@ -8,8 +8,14 @@ import java.util.stream.Stream;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@Tag("appc")
+@RunWith(JUnitPlatform.class)
  class StreamForkerTest {
 	@Test
 	 void testStreamForker_1()
@@ -37,6 +43,7 @@ import org.junit.jupiter.api.Test;
 		assertNotNull(result);
 	}
 
+	@Disabled
 	@Test
 	 void testGetResults_1()
 		throws Exception {
